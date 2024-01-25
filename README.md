@@ -1,70 +1,190 @@
-# Getting Started with Create React App
+# Project Title
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+My app is an event planner for groups. Initially planning for private groups with friends and as an extension public events for anyone in the local area to attend. For private events with friend groups you will need to input the dates you are free and you will be able to suggest events you wish to organise, the location and date and view all your friends available dates as well.
 
-In the project directory, you can run:
+### Problem
 
-### `npm start`
+Why is your app needed? Background information around any pain points or other reasons.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Planning events in a group is always very difficult and harder than it should be as adults because everyone has busy lives. So this will make the planning process easier for everyone.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### User Profile
 
-### `npm test`
+Who will use your app? How will they use it? Any special considerations that your app must take into account.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Anyone with friends who wishes to organise plans in a simple, seamless way. Suggest an event, suggest a date, time and location. View their friends availability so easier to plan. Notification sent out to all their friends about the creation of the event and the option for all of their friends to agree to attend, rearrange the event for a different day and suggest a better day or decline the event invitation. Notification if the friend changes their availibity so they are no longer able to attend the event.
 
-### `npm run build`
+### Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+List the functionality that your app will include. These can be written as user stories or descriptions with related details. Do not describe _how_ these features are implemented, only _what_ needs to be implemented.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Email notification pop ups to other users
+- Log in feature
+- Calender to see everyone's availability (red for when no one is available, orange for a few people are available, green or dark green is for when everyone is free.)
+- Ability to suggest new date for event, or new activity for event on the same day and then email is resent out to everyone with the option to vote for whichever one they would most prefer to do.
+- Email notification to say there has been an update in the app and then they should re-sign into app
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Implementation
 
-### `npm run eject`
+### Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+List technologies that will be used in your app, including any libraries to save time or provide more functionality. Be sure to research any potential limitations.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- React
+- MySQL
+- Express
+- Client libraries:
+  - react
+  - react-router
+  - axios
+- Server libraries:
+  - knex
+  - express
+    -nodemailer (backend library to send email notifications to users) (only gmail)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### APIs
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+List any external sources of data that will be used in your app.
 
-## Learn More
+- No external APIs will be used
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Sitemap
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+List the pages of your app with brief descriptions. You can show this visually, or write it out.
 
-### Code Splitting
+- Login page
+- Home page
+- Create a group page
+  - Create new group
+  - Edit existing group
+- Select availability page
+  - Select availability
+  - Calender
+    - My calender
+    - Choose a group calender
+- Create an event page
+- View friends list page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Mockups
 
-### Analyzing the Bundle Size
+Provide visuals of your app's screens. You can use tools like Figma or pictures of hand-drawn sketches.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Login Page
 
-### Making a Progressive Web App
+![](login.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Home Page
 
-### Advanced Configuration
+![](home.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Create group page
 
-### Deployment
+![](create-a-group.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Edit group page
 
-### `npm run build` fails to minify
+![](edit-group.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Select availability page
+
+![](select-availability.png)
+
+### Choose a group calender page
+
+![](choose-a-group-calender.png)
+
+### Calender Page
+
+![](calender.png)
+
+### Create an event page
+
+![](create-event.png)
+
+### friend list page
+
+![](friend-list.png)
+
+### Data
+
+Describe your data and the relationships between them. You can show this visually using diagrams, or write it out.
+
+![](database-structure.png)
+
+### Endpoints
+
+List endpoints that your server will implement, including HTTP methods, parameters, and example responses.
+
+**GET /dates**
+
+- Get all dates free for one user
+
+**POST /dates**
+
+- Add a new date the user is available
+
+**PATCH /dates**
+
+- Edit a date a user is free
+
+**GET /group**
+
+- Get one group with list of all users in group
+
+**POST /group**
+
+- Create group with a list of users for that group
+
+**PATCH /group**
+
+- Edit who is in the group
+
+**GET /event**
+
+- Get all event details including group details and users attending
+
+**POST /event**
+
+- Create an event with a group and a list of users
+
+**PATCH /event**
+
+- Edit event
+
+### Auth
+
+Does your project include any login or user profile functionality? If so, describe how authentication/authorization will be implemented.
+
+- I would like to implement authorization if possible
+
+## Roadmap
+
+Scope your project as a sprint. Break down the tasks that will need to be completed and map out timeframes for implementation. Think about what you can reasonably complete before the due date. The more detail you provide, the easier it will be to build.
+
+- Create and set up server such as installing libraries
+
+- Create and set up client such as installing libraries and cleaning up code ready for use
+
+- Create routes and make endpoints on the backend with validation
+
+- Test backend with postman to see if endpoints are working
+
+- Start building out front end with routes to see if pages are working
+
+- Design front end to look like mockup
+
+- Pull data from backend and layout data on the frontend to structure pages
+
+- Add validation to the frontend
+
+## Nice-to-haves
+
+Your project will be marked based on what you committed to in the above document. Under nice-to-haves, you can list any additional features you may complete if you have extra time, or after finishing.
+
+- Add a map to allow users to see where the event will be held.
+
+- Allow for public events so users can see public events in the local area
+
+- Add animations to webpage (mui) (materialui) (nextui)
