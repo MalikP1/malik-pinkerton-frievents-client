@@ -1,0 +1,21 @@
+.edit-group {
+  margin: 0 1rem;
+  &__form {
+    display: flex;
+  }
+}
+.edit-group-inputs {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.edit-group-responses {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 15vh;
+}
