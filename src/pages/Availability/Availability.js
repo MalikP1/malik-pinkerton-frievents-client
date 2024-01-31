@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./Availability.scss";
+import SelectAva from "../../components/AvailabilityPage/SelectAva/SelectAva";
+import ChooseCal from "../../components/AvailabilityPage/ChooseCal/ChooseCal";
 
 function Availability() {
   const [isCalendar, setIsCalendar] = useState(false);
@@ -10,12 +12,12 @@ function Availability() {
     setIsCalendar(false);
   };
   return (
-    <main>
-      <article>
+    <main className="ava">
+      <article className="ava__header">
         <button onClick={changeToSelectAva}>Select Availability</button>
         <button onClick={changeToCalendar}>Calender</button>
       </article>
-      {/* {isCalendar ? <Calendar /> : <SelectAva />} */}
+      {isCalendar ? <ChooseCal /> : <SelectAva />}
     </main>
   );
 }

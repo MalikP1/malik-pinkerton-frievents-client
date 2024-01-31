@@ -1,8 +1,8 @@
 import "./Group.scss";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import NewGroup from "../../components/NewGroup/NewGroup";
-import EditGroup from "../../components/EditGroup/EditGroup";
+import NewGroup from "../../components/CreateGroupPage/NewGroup/NewGroup";
+import EditGroup from "../../components/CreateGroupPage/EditGroup/EditGroup";
 
 function Group() {
   const [isNewGroup, setIsNewGroup] = useState(true);

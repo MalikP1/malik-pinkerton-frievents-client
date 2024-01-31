@@ -117,29 +117,33 @@ Describe your data and the relationships between them. You can show this visuall
 
 List endpoints that your server will implement, including HTTP methods, parameters, and example responses.
 
+**GET /users**
+
+- Get all user
+
+**GET /users/:id**
+
+- Get one user
+
+**POST /users**
+
+- Add a new user
+
+**PATCH /users**
+
+- edit a user
+
 **GET /dates**
 
-- Get all dates free for one user
+- Get all dates
 
 **POST /dates**
 
-- Add a new date the user is available
+- Add a new date
 
-**PATCH /dates**
+**Delete /dates**
 
-- Edit a date a user is free
-
-**GET /group**
-
-- Get one group with list of all users in group
-
-**POST /group**
-
-- Create group with a list of users for that group
-
-**PATCH /group**
-
-- Edit who is in the group
+- Delete a date
 
 **GET /event**
 
@@ -152,6 +156,18 @@ List endpoints that your server will implement, including HTTP methods, paramete
 **PATCH /event**
 
 - Edit event
+
+**GET /group**
+
+- Get one group with list of all users in group
+
+**POST /group**
+
+- Create group with a list of users for that group
+
+**PATCH /group**
+
+- Edit who is in the group
 
 ### Auth
 

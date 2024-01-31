@@ -1,0 +1,8 @@
+.group-calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    padding: 1rem;
+  }
+}
