@@ -4,7 +4,8 @@ import "react-calendar/dist/Calendar.css";
 
 function CalendarComp() {
   return (
-    <section className="calendar">
+    <section className="my-calendar">
+      <h1 className="my-calendar__title">My Calendar</h1>
       <Calendar />
     </section>
   );

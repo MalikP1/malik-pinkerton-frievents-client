@@ -1,6 +1,10 @@
-.calendar {
+.my-calendar {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    padding-bottom: 1rem;
+  }
 }
 .react-calendar {
 }
