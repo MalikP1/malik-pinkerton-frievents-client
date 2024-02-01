@@ -4,6 +4,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Group from "./pages/Group/Group";
 import Availability from "./pages/Availability/Availability";
+import Event from "./pages/Event/Event";
+import Friends from "./pages/Friends/Friends";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/group" element={<Group />} />
         <Route path="/availability" element={<Availability />} />
+        <Route path="/event" element={<Event />} />
+        <Route path="/friends" element={<Friends />} />
       </Routes>
     </BrowserRouter>
   );

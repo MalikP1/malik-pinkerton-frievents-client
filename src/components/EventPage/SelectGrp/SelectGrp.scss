@@ -1,4 +1,4 @@
-.choose-group {
+.select-group {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,5 +9,6 @@
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+    padding-bottom: 1rem;
   }
 }
