@@ -6,13 +6,17 @@ import Group from "./pages/Group/Group";
 import Availability from "./pages/Availability/Availability";
 import Event from "./pages/Event/Event";
 import Friends from "./pages/Friends/Friends";
+import Signup from "./pages/SignUp/SignUp";
+import Login from "./pages/Login/Login";
 
 function App() {
   return (
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/group" element={<Group />} />
         <Route path="/availability" element={<Availability />} />
         <Route path="/event" element={<Event />} />
