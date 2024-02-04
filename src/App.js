@@ -8,6 +8,7 @@ import Event from "./pages/Event/Event";
 import Friends from "./pages/Friends/Friends";
 import Signup from "./pages/SignUp/SignUp";
 import Login from "./pages/Login/Login";
+import Profile from "./pages/Profile/Profile";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Signup />} />
+        <Route path="/profile" element={<Profile />} />
         <Route path="/login" element={<Login />} />
         <Route path="/home" element={<Home />} />
         <Route path="/group" element={<Group />} />

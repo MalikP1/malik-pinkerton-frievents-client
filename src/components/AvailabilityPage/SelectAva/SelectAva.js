@@ -4,7 +4,7 @@ function SelectAva() {
   return (
     <form>
       <label>
-        Select dates you are free: <input />
+        Select dates you are free: <input type="date" />
       </label>
       <button>Save</button>
     </form>
