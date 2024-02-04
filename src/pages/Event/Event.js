@@ -3,8 +3,8 @@ import "./Event.scss";
 
 function Event() {
   return (
-    <main>
-      <h1>Event page</h1>
+    <main className="event">
+      <h1 className="event__title">Event page</h1>
       <SelectGrp />
     </main>
   );

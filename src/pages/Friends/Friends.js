@@ -23,16 +23,16 @@ function Friends() {
   }
 
   return (
-    <main>
+    <main className="friends">
       <h1>Friends Page</h1>
       {users.map((user) => {
         return (
           <article key={user.id}>
             <p>User: {user.id}</p>
             <p>
-              {user.first_name} {user.last_name}
+              Name: {user.first_name} {user.last_name}
             </p>
-            <p>{user.email}</p>
+            <p>Email: {user.email}</p>
           </article>
         );
       })}

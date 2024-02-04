@@ -26,20 +26,21 @@ function SelectGrp() {
   return (
     <section className="select-group">
       <h1 className="select-group__header">Select friend group:</h1>
-      {groups.map((group) => {
-        return (
-          <article key={group.id} className="select-group__buttons">
-            <button
-              className="select-group__button"
-              onClick={() => {
-                setGroupId(group.id);
-              }}
-            >
-              {group.name}
-            </button>
-          </article>
-        );
-      })}
+      <div className="select-group__buttons">
+        {groups.map((group) => {
+          return (
+            <article className="select-group__button" key={group.id}>
+              <button
+                onClick={() => {
+                  setGroupId(group.id);
+                }}
+              >
+                {group.name}
+              </button>
+            </article>
+          );
+        })}
+      </div>
       {groupId ? <Dates num={groupId} /> : null}
     </section>
   );

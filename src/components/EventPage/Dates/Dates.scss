@@ -1,5 +1,16 @@
 .dates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   &__header {
-    padding-bottom: 1rem;
+    padding: 1rem;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 30vh;
+    padding: 1rem;
+    width: 100%;
   }
 }
