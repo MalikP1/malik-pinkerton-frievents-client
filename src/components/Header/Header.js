@@ -13,7 +13,7 @@ function Header() {
           Create a group
         </Link>
         <Link className="links__availability" to="/availability">
-          Select availability
+          Availability
         </Link>
         <Link className="links__event" to="/event">
           Create an event

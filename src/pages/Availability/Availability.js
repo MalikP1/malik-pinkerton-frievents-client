@@ -14,8 +14,8 @@ function Availability() {
   return (
     <main className="ava">
       <article className="ava__header">
-        <button onClick={changeToSelectAva}>Select Availability</button>
-        <button onClick={changeToCalendar}>Calender</button>
+        <button onClick={changeToSelectAva}>Update Availability</button>
+        <button onClick={changeToCalendar}>View Availability</button>
       </article>
       {isCalendar ? <ChooseCal /> : <SelectAva />}
     </main>

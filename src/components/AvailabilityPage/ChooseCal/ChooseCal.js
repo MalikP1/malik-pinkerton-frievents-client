@@ -14,8 +14,8 @@ function ChooseCalen() {
   return (
     <section>
       <article className="choose">
-        <button onClick={changeToMyCal}>My Calendar</button>
-        <button onClick={changeToGrpCal}>Choose a group calendar</button>
+        <button onClick={changeToMyCal}>My Availability</button>
+        <button onClick={changeToGrpCal}>Group Availability</button>
       </article>
       {myCalen ? <MyCal /> : <ChooseGrp />}
     </section>

@@ -11,7 +11,6 @@ function Home() {
 
   const token = sessionStorage.getItem("token");
   const decoded = jwtDecode(token);
-  console.log(decoded);
 
   useEffect(() => {
     // const fetchUserDetails = async () => {
@@ -42,7 +41,6 @@ function Home() {
   }
 
   console.log(userDetails);
-  console.log(eventDetails);
   return (
     <main className="home">
       <h1 className="home__title">Current events organised</h1>
