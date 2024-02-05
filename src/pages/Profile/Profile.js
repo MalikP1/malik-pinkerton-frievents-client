@@ -80,9 +80,9 @@ function Profile() {
         style={{ fontSize: "2em", display: "inline-block" }}
         repeat={1}
       />
-      {/* <p>
-        Welcome back, {user.first_name} {user.last_name}
-      </p> */}
+      <Link to="/home" className="profile__link">
+        Go to the current planned events page.
+      </Link>
       <h2 className="profile__sub-header">My Profile</h2>
       <p className="profile__text">
         {" "}

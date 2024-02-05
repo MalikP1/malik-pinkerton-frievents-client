@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./SelectAva.scss";
 import axios from "axios";
 import { jwtDecode } from "jwt-decode";
+
 function SelectAva() {
   const url = process.env.REACT_APP_BASE_URL;
   const [userDate, setUserDate] = useState(null);
@@ -27,11 +28,11 @@ function SelectAva() {
     setSubmit(true);
   };
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="select-ava" onSubmit={handleSubmit}>
       <label>
         Select dates you are free: <input onChange={handleChange} type="date" />
       </label>
-      <button>Save</button>
+      <button className="select-ava__button">Save</button>
       {submit ? <p>Date successfully saved!</p> : null}
     </form>
   );

@@ -5,6 +5,14 @@
   &__title {
     padding-bottom: 1rem;
   }
+  &__sub-title {
+    padding: 1rem;
+  }
+  &__dates {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
 }
 .react-calendar {
 }

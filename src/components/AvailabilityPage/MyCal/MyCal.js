@@ -31,14 +31,16 @@ function CalendarComp() {
     <section className="my-calendar">
       <h1 className="my-calendar__title">My Calendar</h1>
       <Calendar />
-      <h1>My availability</h1>
-      {userDates.map((date) => {
-        return (
-          <article key={date.id}>
-            <p>{moment(date.date).format("DD/MM/YYYY")}</p>
-          </article>
-        );
-      })}
+      <h1 className="my-calendar__sub-title">My availability</h1>
+      <div className="my-calendar__dates">
+        {userDates.map((date) => {
+          return (
+            <article key={date.id}>
+              <p>{moment(date.date).format("DD/MM/YYYY")}</p>
+            </article>
+          );
+        })}
+      </div>
     </section>
   );
 }
