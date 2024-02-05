@@ -72,7 +72,7 @@ function Dates(props) {
             Successfully created an Event called {eventName} at {eventLocation}{" "}
             on {eventDate}!{" "}
           </p>{" "}
-          <Link to="/home">
+          <Link className="dates__link" to="/home">
             Go to current events page to see all planned events
           </Link>
         </>

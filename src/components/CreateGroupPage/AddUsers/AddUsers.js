@@ -38,25 +38,28 @@ function AddUsers({ num, name }) {
     setSubmit(true);
   };
   return (
-    <main>
-      <h1>Successfully created: {name}</h1>
-      <h3>Add Users:</h3>
-      {users.map((user) => {
-        return (
-          <article
-            onClick={() => {
-              setChosenUser([...chosenUser, user.id]);
-            }}
-            key={user.id}
-          >
-            <p>
-              {user.first_name} {user.last_name}
-            </p>
-          </article>
-        );
-      })}
+    <main className="add-users">
+      <h1 className="add-users__title">Successfully created: {name}</h1>
+      <h3 className="add-users__sub-header">Choose Users:</h3>
+      <div className="add-users__cards">
+        {users.map((user) => {
+          return (
+            <article
+              className="add-users__card"
+              onClick={() => {
+                setChosenUser([...chosenUser, user.id]);
+              }}
+              key={user.id}
+            >
+              <p>
+                {user.first_name} {user.last_name}
+              </p>
+            </article>
+          );
+        })}
+      </div>
       <form onSubmit={handleSubmit}>
-        <button>Submit chosen users</button>
+        <button className="add-users__button">Submit chosen users</button>
       </form>
       {submit ? (
         <p>

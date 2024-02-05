@@ -1,0 +1,27 @@
+.add-users {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    padding-bottom: 1rem;
+  }
+  &__sub-header {
+    padding-bottom: 0.5rem;
+  }
+  &__cards {
+    display: flex;
+  }
+  &__card {
+    padding: 0.5rem;
+    border: 1px solid black;
+    margin: 0.5rem;
+    border-radius: 5px;
+    :hover {
+      background-color: beige;
+      cursor: pointer;
+    }
+  }
+  &__button {
+    margin: 1rem;
+  }
+}
