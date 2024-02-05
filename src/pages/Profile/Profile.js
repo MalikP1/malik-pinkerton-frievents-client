@@ -41,7 +41,7 @@ function Profile() {
 
   if (failedAuth) {
     return (
-      <main className="Profile">
+      <main className="profile">
         <p>You must be logged in to see this page.</p>
         <p>
           <Link to="/login">Log in</Link>
@@ -52,15 +52,15 @@ function Profile() {
 
   if (!user) {
     return (
-      <main className="Profile">
+      <main className="profile">
         <p>Loading...</p>
       </main>
     );
   }
 
   return (
-    <main className="Profile">
-      <h1 className="Profile__title">
+    <main className="profile">
+      <h1 className="profile__title">
         Welcome {user.first_name} to FriEvents!
       </h1>
       <TypeAnimation
@@ -83,13 +83,13 @@ function Profile() {
       {/* <p>
         Welcome back, {user.first_name} {user.last_name}
       </p> */}
-      <h2>My Profile</h2>
-      <p>Email: {user.email}</p>
-      <p>
+      <h2 className="profile__sub-header">My Profile</h2>
+      <p className="profile__text">
         {" "}
         Name: {user.first_name} {user.last_name}
       </p>
-      <button className="Profile__logout" onClick={handleLogout}>
+      <p>Email: {user.email}</p>
+      <button className="profile__logout" onClick={handleLogout}>
         Log out
       </button>
     </main>
