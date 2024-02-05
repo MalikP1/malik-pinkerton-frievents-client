@@ -73,45 +73,45 @@ Provide visuals of your app's screens. You can use tools like Figma or pictures 
 
 ### Login Page
 
-![](login.png)
+![](./src/Proposal/login.png)
 
 ### Home Page
 
-![](home.png)
+![](./src/Proposal/home.png)
 
 ### Create group page
 
-![](create-a-group.png)
+![](./src/Proposal/create-a-group.png)
 
 ### Edit group page
 
-![](edit-group.png)
+![](./src/Proposal/edit-group.png)
 
 ### Select availability page
 
-![](select-availability.png)
+![](./src/Proposal/select-availability.png)
 
 ### Choose a group calender page
 
-![](choose-a-group-calender.png)
+![](./src/Proposal/choose-a-group-calender.png)
 
 ### Calender Page
 
-![](calender.png)
+![](./src/Proposal/calender.png)
 
 ### Create an event page
 
-![](create-event.png)
+![](./src/Proposal/create-event.png)
 
 ### friend list page
 
-![](friend-list.png)
+![](./src/Proposal/friend-list.png)
 
 ### Data
 
 Describe your data and the relationships between them. You can show this visually using diagrams, or write it out.
 
-![](database-structure.png)
+![](./src/Proposal/database-structure.png)
 
 ### Endpoints
 
