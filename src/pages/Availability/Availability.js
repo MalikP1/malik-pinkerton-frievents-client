@@ -13,9 +13,14 @@ function Availability() {
   };
   return (
     <main className="ava">
+      <h1 className="ava__title">Availability Page</h1>
       <article className="ava__header">
-        <button onClick={changeToSelectAva}>Update Availability</button>
-        <button onClick={changeToCalendar}>View Availability</button>
+        <button className="ava__button" onClick={changeToSelectAva}>
+          Update Availability
+        </button>
+        <button className="ava__button" onClick={changeToCalendar}>
+          View Availability
+        </button>
       </article>
       {isCalendar ? <ChooseCal /> : <SelectAva />}
     </main>

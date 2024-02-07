@@ -29,8 +29,9 @@ function SelectGrp() {
       <div className="select-group__buttons">
         {groups.map((group) => {
           return (
-            <article className="select-group__button" key={group.id}>
+            <article className="select-group__card" key={group.id}>
               <button
+                className="select-group__button"
                 onClick={() => {
                   setGroupId(group.id);
                 }}

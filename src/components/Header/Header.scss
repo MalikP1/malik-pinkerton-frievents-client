@@ -1,50 +1,36 @@
-.header {
-  margin: 1rem;
-}
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/breakpoints" as *;
+
 .logo {
+  background-color: $bg;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid black;
   padding: 0.5rem;
-  margin-bottom: 0.5rem;
   text-decoration: none;
   &__title {
-    color: black;
+    color: $pc;
   }
   &__tagline {
-    border: 1px solid black;
+    border: 1.5px solid $link;
     padding: 0.5rem;
-    color: black;
+    color: $bg;
+    border-radius: 5px;
+    background-color: $pc;
   }
 }
 .links {
+  background-color: $bg;
   display: flex;
   justify-content: space-evenly;
-  border: 1px solid black;
   padding: 0.5rem;
-  &__group {
-    color: black;
-    text-decoration: none;
-    border: 1px solid black;
-    padding: 0.1rem;
+  :hover {
+    cursor: pointer;
+    border-bottom: 1.5px solid $link;
   }
-  &__availability {
-    color: black;
+  &__link {
+    color: $pc;
     text-decoration: none;
-    border: 1px solid black;
-    padding: 0.1rem;
-  }
-  &__event {
-    color: black;
-    text-decoration: none;
-    border: 1px solid black;
-    padding: 0.1rem;
-  }
-  &__friends {
-    color: black;
-    text-decoration: none;
-    border: 1px solid black;
     padding: 0.1rem;
   }
 }

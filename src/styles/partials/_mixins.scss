@@ -1,0 +1,10 @@
+@use "./variables" as *;
+
+@mixin button {
+  color: $bg;
+  background-color: $pc;
+  border: 1.5px solid $link;
+  border-radius: 5px;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+}

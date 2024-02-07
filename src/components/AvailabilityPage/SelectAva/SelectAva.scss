@@ -1,8 +1,22 @@
+@use "../../../styles/partials/variables" as *;
+@use "../../../styles/partials/mixins" as *;
+
 .select-ava {
   display: flex;
   flex-direction: column;
   align-items: center;
+  &__label {
+    color: $pc;
+  }
+  &__input {
+    border: 1.5px solid $link;
+    border-radius: 5px;
+  }
   &__button {
     margin: 1rem;
+    @include button;
+  }
+  &__success {
+    color: $pc;
   }
 }

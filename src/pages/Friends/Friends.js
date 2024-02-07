@@ -24,7 +24,7 @@ function Friends() {
 
   return (
     <main className="friends">
-      <h1>Friends Page</h1>
+      <h1 className="friends__title">Friends Page</h1>
       {users.map((user) => {
         return (
           <article key={user.id}>

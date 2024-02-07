@@ -1,9 +1,13 @@
+@use "../../../styles/partials/variables" as *;
+@use "../../../styles/partials/mixins" as *;
+
 .dates {
   display: flex;
   flex-direction: column;
   align-items: center;
   &__header {
     padding: 1rem;
+    color: $pc;
   }
   &__form {
     display: flex;
@@ -21,4 +25,20 @@
     border-radius: 5px;
     margin-top: 1rem;
   }
+  &__label {
+    color: $pc;
+  }
+  &__input {
+    @include button;
+    background-color: white;
+  }
+  &__button {
+    @include button;
+  }
+}
+
+.react-calendar {
+  // background-color: $bg;
+  color: $pc;
+  border: 1px solid $link;
 }

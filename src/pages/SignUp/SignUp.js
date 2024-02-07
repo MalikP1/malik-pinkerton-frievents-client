@@ -34,9 +34,9 @@ function Signup() {
         <Input type="text" name="email" label="Email" />
         <Input type="password" name="password" label="Password" />
         <button className="signup__button">Sign up</button>
-        <p>{error}</p>
+        <p className="signup__error">{error}</p>
       </form>
-      <p>
+      <p className="signup__login">
         Have an account? <Link to="/login">Log in</Link>
       </p>
     </main>

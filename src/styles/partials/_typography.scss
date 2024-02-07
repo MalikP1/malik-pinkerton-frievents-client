@@ -1,0 +1,20 @@
+@font-face {
+  font-family: Merriweather;
+  src: url("../../assets/fonts/Merriweather-fonts/Merriweather-Light.ttf")
+    format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: Merriweather;
+  src: url("../../assets/fonts/Merriweather-fonts/Merriweather-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Merriweather;
+  src: url("../../assets/fonts/Merriweather-fonts/Merriweather-Bold.ttf")
+    format("truetype");
+  font-weight: 700;
+}
+
+$site-main-font: "Merriweather";

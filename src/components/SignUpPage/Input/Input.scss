@@ -1,9 +1,12 @@
+@use "../../../styles/partials/variables" as *;
+
 .field {
   display: flex;
   flex-direction: column;
 
   &__label {
     margin-bottom: 0.5rem;
+    color: $bg;
   }
 
   &__input {

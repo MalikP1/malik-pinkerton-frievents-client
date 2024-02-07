@@ -9,16 +9,16 @@ function Header() {
         <p className="logo__tagline">Event planner for busy friends</p>
       </Link>
       <article className="links">
-        <Link className="links__group" to="/group">
+        <Link className="links__link" to="/group">
           Create a group
         </Link>
-        <Link className="links__availability" to="/availability">
+        <Link className="links__link" to="/availability">
           Availability
         </Link>
-        <Link className="links__event" to="/event">
+        <Link className="links__link" to="/event">
           Create an event
         </Link>
-        <Link className="links__friends" to="/friends">
+        <Link className="links__link" to="/friends">
           View friends list
         </Link>
       </article>

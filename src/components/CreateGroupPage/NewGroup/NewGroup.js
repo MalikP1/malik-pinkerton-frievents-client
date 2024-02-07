@@ -40,13 +40,17 @@ function NewGroup() {
     <section className="new-group">
       <form onSubmit={handleSubmit} className="new-group__form">
         <article className="new-group-inputs">
-          <label>
-            Name group: <input onChange={handleChange} />
+          <label className="new-group-inputs__label">
+            Name group:{" "}
+            <input
+              className="new-group-inputs__input"
+              onChange={handleChange}
+            />
           </label>
         </article>
         <article className="new-group-responses">
-          <p>Group Name: {groupName}</p>
-          <button>Create group</button>
+          <p className="new-group-responses__name">Group Name: {groupName}</p>
+          <button className="new-group-responses__button">Create group</button>
         </article>
       </form>
       {groupNum ? <AddUsers num={groupNum} name={groupName} /> : null}

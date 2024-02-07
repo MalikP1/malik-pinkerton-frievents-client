@@ -1,7 +1,24 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
 .ava {
+  background-color: $bg;
+  display: flex;
+  flex-direction: column;
+  height: 84.75%;
+  &__title {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    color: $pc;
+    text-decoration: solid underline $link 3px;
+  }
   &__header {
     display: flex;
     justify-content: space-evenly;
-    margin: 2rem;
+    margin-bottom: 2rem;
+  }
+  &__button {
+    @include button;
   }
 }

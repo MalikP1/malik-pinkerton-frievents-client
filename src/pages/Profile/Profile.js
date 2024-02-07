@@ -67,13 +67,13 @@ function Profile() {
         sequence={[
           // Same substring at the start will only be typed out once, initially
           "This is an application designed to organise events with your friends!",
-          1000, // wait 1s before replacing "Mice" with "Hamsters"
+          800, // wait 1s before replacing "Mice" with "Hamsters"
           "To get started you'll need to select your availability, and create a group of other users!",
-          1000,
+          800,
           "Once you've done that you can plan an event but make sure everyone is free!",
-          1000,
+          800,
           "Check other users availability on the events page or on the group calender on the availability page!",
-          1000,
+          800,
         ]}
         wrapper="span"
         speed={50}

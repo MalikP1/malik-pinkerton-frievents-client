@@ -1,25 +1,41 @@
+@use "../../styles/partials/variables" as *;
+
 .home {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid black;
-  margin: 0 1rem;
+  background-color: $bg;
+  height: 100%;
   &__title {
     display: flex;
     justify-content: center;
+    border-bottom: 3px solid $link;
+    margin: 1rem 0;
+    color: $pc;
+  }
+  &__sub-title {
+    color: $pc;
+    padding-bottom: 0.5rem;
   }
 }
 .events {
   display: flex;
   justify-content: space-evenly;
   padding: 0.5rem;
-  border: 1px solid black;
+  border: 1.5px solid $link;
+  border-radius: 5px;
   margin: 0.5rem;
 }
 
 .event-attendees {
   padding: 0 0.5rem;
+  &__inputs {
+    color: $pc;
+  }
 }
 .event-specifics {
   padding: 0 0.5rem;
+  &__inputs {
+    color: $pc;
+  }
 }

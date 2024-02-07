@@ -1,22 +1,24 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
 .profile {
-  background-color: #f5f5f5;
+  background-color: $bg;
   padding: 1rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: $pc;
   &__title {
-    margin: 0 0 1rem;
+    margin: 0.8rem 0 1rem;
     padding: 0 0 0.5rem;
-    border-bottom: 5px solid #ccc;
+    border-bottom: 5px solid $link;
   }
   &__link {
-    color: black;
     text-decoration: none;
-    border: 1px solid black;
+    margin-top: 1.5rem;
+    @include button;
     padding: 0.5rem;
-    border-radius: 5px;
-    margin-top: 1rem;
   }
   &__sub-header {
     padding: 1rem;
@@ -26,5 +28,6 @@
   }
   &__logout {
     margin: 1rem;
+    @include button;
   }
 }

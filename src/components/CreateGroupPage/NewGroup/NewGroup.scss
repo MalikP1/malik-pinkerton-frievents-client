@@ -1,3 +1,6 @@
+@use "../../../styles/partials/variables" as *;
+@use "../../../styles/partials/mixins" as *;
+
 .new-group {
   margin: 0 1rem;
   &__form {
@@ -10,6 +13,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  &__label {
+    color: $pc;
+  }
+  &__input {
+    border: 1.5px solid $link;
+    border-radius: 5px;
+    margin-top: 1rem;
+  }
 }
 .new-group-responses {
   width: 50%;
@@ -18,4 +29,11 @@
   align-items: center;
   justify-content: space-evenly;
   height: 15vh;
+  &__name {
+    color: $pc;
+  }
+  &__button {
+    @include button;
+    margin-top: -1rem;
+  }
 }

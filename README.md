@@ -73,45 +73,45 @@ Provide visuals of your app's screens. You can use tools like Figma or pictures 
 
 ### Login Page
 
-![](./src/Proposal/login.png)
+![](./src/assets/images/Proposal/login.png)
 
 ### Home Page
 
-![](./src/Proposal/home.png)
+![](./src/assets/images/Proposal/home.png)
 
 ### Create group page
 
-![](./src/Proposal/create-a-group.png)
+![](./src/assets/images/Proposal/create-a-group.png)
 
 ### Edit group page
 
-![](./src/Proposal/edit-group.png)
+![](./src/assets/images/Proposal/edit-group.png)
 
 ### Select availability page
 
-![](./src/Proposal/select-availability.png)
+![](./src/assets/images/Proposal/select-availability.png)
 
 ### Choose a group calender page
 
-![](./src/Proposal/choose-a-group-calender.png)
+![](./src/assets/images/Proposal/choose-a-group-calender.png)
 
 ### Calender Page
 
-![](./src/Proposal/calender.png)
+![](./src/assets/images/Proposal/calender.png)
 
 ### Create an event page
 
-![](./src/Proposal/create-event.png)
+![](./src/assets/images/Proposal/create-event.png)
 
 ### friend list page
 
-![](./src/Proposal/friend-list.png)
+![](./src/assets/images/Proposal/friend-list.png)
 
 ### Data
 
 Describe your data and the relationships between them. You can show this visually using diagrams, or write it out.
 
-![](./src/Proposal/database-structure.png)
+![](./src/assets/images/Proposal/database-structure.png)
 
 ### Endpoints
 

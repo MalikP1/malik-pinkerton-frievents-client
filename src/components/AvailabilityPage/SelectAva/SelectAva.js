@@ -29,11 +29,18 @@ function SelectAva() {
   };
   return (
     <form className="select-ava" onSubmit={handleSubmit}>
-      <label>
-        Select dates you are free: <input onChange={handleChange} type="date" />
+      <label className="select-ava__label">
+        Select dates you are free:{" "}
+        <input
+          className="select-ava__input"
+          onChange={handleChange}
+          type="date"
+        />
       </label>
-      <button className="select-ava__button">Save</button>
-      {submit ? <p>Date successfully saved!</p> : null}
+      <button className="select-ava__button">Save Date</button>
+      {submit ? (
+        <p className="select-ava__success">Date successfully saved!</p>
+      ) : null}
     </form>
   );
 }

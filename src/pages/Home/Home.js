@@ -40,25 +40,25 @@ function Home() {
     return <p>Loading event details...</p>;
   }
 
-  console.log(userDetails);
   return (
     <main className="home">
-      <h1 className="home__title">Current events organised</h1>
+      <h1 className="home__title">Home Page</h1>
+      <h2 className="home__sub-title">Current events organised</h2>
       {eventDetails.map((event) => {
         return (
           <section key={event.id} className="events">
             <article className="event-attendees">
-              <p className="event-attendees__event">Event: {event.name}</p>
-              <p className="event-attendees__group">Group: {event.group_id}</p>
+              <p className="event-attendees__inputs">Event: {event.name}</p>
+              <p className="event-attendees__inputs">Group: {event.group_id}</p>
             </article>
             <article className="event-specifics">
-              <p className="event-specifics__date">
+              <p className="event-specifics__inputs">
                 Date of event: {moment(event.date).format("DD/MM/YYYY")}
               </p>
-              <p className="event-specifics__location">
+              <p className="event-specifics__inputs">
                 Location of event: {event.location}
               </p>
-              <p className="event-specifics__time">
+              <p className="event-specifics__inputs">
                 Time of event: {event.time}
               </p>
             </article>

@@ -51,19 +51,37 @@ function Dates(props) {
       <Calendar />
 
       <form className="dates__form" onSubmit={handleSubmit}>
-        <label>
-          Choose Event: <input onChange={handleName} name="name" />
+        <label className="dates__label">
+          Choose Event:{" "}
+          <input className="dates__input" onChange={handleName} name="name" />
         </label>
-        <label>
-          Choose Location: <input onChange={handleLoc} name="location" />
+        <label className="dates__label">
+          Choose Location:{" "}
+          <input
+            className="dates__input"
+            onChange={handleLoc}
+            name="location"
+          />
         </label>
-        <label>
-          Choose date: <input onChange={handleDate} name="date" type="date" />
+        <label className="dates__label">
+          Choose date:{" "}
+          <input
+            className="dates__input"
+            onChange={handleDate}
+            name="date"
+            type="date"
+          />
         </label>
-        <label>
-          Choose time: <input onChange={handleTime} name="time" type="time" />
+        <label className="dates__label">
+          Choose time:{" "}
+          <input
+            className="dates__input"
+            onChange={handleTime}
+            name="time"
+            type="time"
+          />
         </label>
-        <button>Create Event</button>
+        <button className="dates__button">Create Event</button>
       </form>
       {submit ? (
         <>
